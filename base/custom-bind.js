@@ -1,3 +1,4 @@
+// https://medium.com/geekculture/custom-implementation-of-bind-method-in-javascript-c5db931b1cf4
 const info = {
     firstName: 'Max',
     lastName: 'V'
