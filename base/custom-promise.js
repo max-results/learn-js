@@ -1,0 +1,1 @@
+// https://medium.com/swlh/implement-a-simple-promise-in-javascript-20c9705f197a
