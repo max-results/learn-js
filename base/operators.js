@@ -49,6 +49,15 @@ num6 / 3n // 3n, not 3.333...n
 '10' % 3 // 10
 
 //-----
+/**
+ Bitwise AND assignment (&=)
+ Bitwise OR assignment (|=)
+ Bitwise XOR assignment (^=)
+ Left shift assignment (<<=)
+ Right shift assignment (>>=)
+ Unsigned right shift assignment (>>>=)
+
+ */
 
 
 //-----
