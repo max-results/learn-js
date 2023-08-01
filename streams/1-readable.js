@@ -1,5 +1,7 @@
 'use strict';
 
+// https://github.com/HowProgrammingWorks/Streams/blob/master/JavaScript/1-readable.js
+
 const fs = require('node:fs');
 const { Readable } = require('stream')
 
