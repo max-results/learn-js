@@ -12,14 +12,14 @@ const writable = fs.createWriteStream('./copy.tmp', { highWaterMark: 4321 }); //
 
 readable.on('data', (chunk) => {
     console.log(`Write: ${chunk.length} bytes`);
-    const canWrite = writable.write(chunk);
+    const canWrite = writable.write(chunk); // якщо ще є місце в буфері після запису - то повертається true
     if (!canWrite) {
         console.log('Pause readable due to backpressure');
-        readable.pause();
+        readable.pause(); // з readable стріма нічого не буде читатись
     }
 });
 
-// drain - подія, коли writable срім вкинув все кудись. У даному випадку у файл
+// drain - подія, коли writable стрім вкинув все кудись. У даному випадку у файл
 writable.on('drain', () => {
     console.log('Event drain: resume readable');
     readable.resume();

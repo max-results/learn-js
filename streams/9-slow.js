@@ -13,7 +13,7 @@ const createSlowStream = (delay) => {
                 this.push(char);
                 await timers.setTimeout(delay);
             }
-            next();
+            next(); // першим аргументом можна кидати помилку
         }
     };
     return new stream.Transform(options);

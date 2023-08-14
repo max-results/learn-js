@@ -11,8 +11,8 @@ const readable = new stream.Readable();
 
 readable.push('Hello ');
 // readable.emit('error', new Error('Cant generate data'));
-readable.push('World!');
-readable.push(null);
+readable.push('World!'); // чанки тут склеюються, бо це потік байтів
+readable.push(null);  // null - це службове значення, яке каже про те, що стрім закінчився
 
 const main = async () => {
     //тут елементи склеїлись в один чанк. Це потік байтів і вони в ньому можуть склеюватись
