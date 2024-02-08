@@ -1,5 +1,7 @@
 'use strict';
 
+
+// актуально коли читається із стріма швидше ніж пишеться
 // https://github.com/HowProgrammingWorks/Streams/blob/master/JavaScript/8-muptipipe.js
 
 const fs = require('node:fs');
